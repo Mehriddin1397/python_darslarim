@@ -1,0 +1,10 @@
+mehmonlar=[]
+son=int(input("bugun nechta mehmon keladi: "))
+for m in range(0,son):
+    ism=input(f"{m+1}- mehmonning ismi:")
+    a=ism.lower()
+    if a=="abdulaziz" or a=="jahongir"or a=="jamshid" or a=="feruz":
+        mehmonlar.append(ism.title())
+    else:
+        print(f"{ism}-siz mehmonlar ro'yxatida yuqsiz")
+print(f"Bugun kelgan mehmonlar: {mehmonlar}")
