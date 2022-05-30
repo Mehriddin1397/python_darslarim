@@ -14,3 +14,4 @@ for taom in savat:
         print("dukonda bunday maxsulot yuq")
         savat.remove(taom)
 print(f"qabul qilingan maxsulotlaringiz: {savat}")
+mehriddin
