@@ -1,0 +1,16 @@
+dukon=[]
+savat=[]
+maxsulot=int(input("dukondagi maxsulotlar soni: "))
+for m in range(maxsulot):
+    dukon.append(input(f"{m+1}-maxsulotingiz nomi: "))
+print("dukondagi maxsulotlariz :",dukon)
+tanlov=int(input("Nechta maxsulot olmoqchisiz: "))
+for n in range(tanlov):
+    savat.append(input(f"savatcha uchun {n+1}-maxsulotni kiriting: "))
+for taom in savat:
+    if taom in dukon: 
+        print(f"{taom}- buyurtmangiz qabul qilindi")
+    else: 
+        print("dukonda bunday maxsulot yuq")
+        savat.remove(taom)
+print(f"qabul qilingan maxsulotlaringiz: {savat}")
